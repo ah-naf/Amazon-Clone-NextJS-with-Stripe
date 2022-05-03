@@ -9,12 +9,36 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "12.1.5",
+    "@heroicons/react": "^1.0.6",
+    "@next-auth/mongodb-adapter": "^1.0.3",
+    "@reduxjs/toolkit": "^1.8.1",
+    "@stripe/stripe-js": "^1.29.0",
+    "@tailwindcss/forms": "^0.5.0",
+    "@tailwindcss/line-clamp": "^0.3.1",
+    "@types/react-redux": "^7.1.24",
+    "axios": "^0.27.1",
+    "bcrypt": "^5.0.1",
+    "firebase": "^9.6.11",
+    "firebase-admin": "^10.1.0",
+    "micro": "^9.3.4",
+    "mongodb": "^4.5.0",
+    "next": "^12.1.5",
+    "next-auth": "^4.3.3",
     "react": "18.0.0",
-    "react-dom": "18.0.0"
+    "react-dom": "18.0.0",
+    "react-icons": "^4.3.1",
+    "react-redux": "^8.0.1",
+    "react-responsive-carousel": "^3.2.23",
+    "stripe": "^8.219.0"
   },
   "devDependencies": {
+    "@types/node": "^17.0.25",
+    "@types/react": "^18.0.6",
+    "autoprefixer": "^10.4.4",
     "eslint": "8.14.0",
-    "eslint-config-next": "12.1.5"
+    "eslint-config-next": "12.1.5",
+    "postcss": "^8.4.12",
+    "tailwindcss": "^3.0.24",
+    "typescript": "^4.6.3"
   }
 }
