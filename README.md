@@ -1,4 +1,11 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Tools Used
+- NextAuth (Used both Google and Credential Provider)
+- TailwindCSS
+- NextJS
+- MongoDB
+- Stripe and Stripe Webhook
+
+
 
 ## Getting Started
 
