@@ -7,7 +7,7 @@ import { useEffect } from "react";
 import axios from "axios";
 import Head from "next/head";
 
-export default function success() {
+export default function Success() {
   const router = useRouter();
   const session = useSession();
 
