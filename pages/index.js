@@ -8,11 +8,11 @@ import { useEffect } from "react";
 import { initializeBaskets } from "../store/basketSlice";
 
 export default function Home({ products, cart }) {
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
 
   useEffect(() => {
-    if(cart.length > 0) dispatch(initializeBaskets(cart))
-  }, [cart])
+    if (cart.length > 0) dispatch(initializeBaskets(cart));
+  }, [cart]);
 
   return (
     <div className="bg-gray-100">
@@ -46,7 +46,7 @@ export async function getServerSideProps(context) {
   return {
     props: {
       products: response[0],
-      cart: response[1].status ? [] : response[1],
+      cart: "status" in response[1] ? [] : response[1],
     },
   };
 }
