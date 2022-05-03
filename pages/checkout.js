@@ -97,7 +97,7 @@ export default function Checkout({ cart }) {
 export async function getServerSideProps(ctx) {
   const headers = ctx.req.headers;
   const res = await axios
-    .get("http://localhost:3000/api/cart", {
+    .get(`${process.env.HOST}/api/cart`, {
       headers: { Cookie: headers.cookie },
     })
     .then((data) => data.data)

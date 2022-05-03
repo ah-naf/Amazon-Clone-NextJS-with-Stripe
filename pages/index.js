@@ -33,10 +33,11 @@ export default function Home({ products, cart }) {
 export async function getServerSideProps(context) {
   const headers = context.req.headers;
 
+
   const response = await Promise.all([
     axios.get("https://fakestoreapi.com/products").then((items) => items.data),
     axios
-      .get("http://localhost:3000/api/cart", {
+      .get(`${process.env.HOST}/api/cart`, {
         headers: { Cookie: headers.cookie },
       })
       .then((items) => items.data)

@@ -46,7 +46,7 @@ export async function getServerSideProps(ctx) {
   }
 
   const res = await axios
-    .get("http://localhost:3000/api/order", {
+    .get(`${process.env.HOST}/api/order`, {
       headers: { Cookie: headers.cookie },
     })
     .then((data) => data.data)
