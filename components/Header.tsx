@@ -66,7 +66,6 @@ export default function Header() {
           <p className="cursor-pointer hover:underline flex items-center"><MenuIcon className="h-6 mr-1" /> All</p>
           <p className="cursor-pointer hover:underline">Prime Video</p>
           <p className="cursor-pointer hover:underline">Amazon Business</p>
-          <p className="cursor-pointer hover:underline">Today's Deal</p>
           <p className="cursor-pointer hover:underline hidden lg:inline-flex">Electronics</p>
           <p className="cursor-pointer hover:underline hidden lg:inline-flex">Food & Grocery</p>
           <p className="cursor-pointer hover:underline hidden lg:inline-flex">Prime</p>
