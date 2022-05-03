@@ -33,6 +33,9 @@ export default function Home({ products, cart }) {
 export async function getServerSideProps(context) {
   const headers = context.req.headers;
 
+  console.log(process.env)
+  console.log(process.env.NEXTAUTH_URL)
+  console.log(process.env.HOST)
 
   const response = await Promise.all([
     axios.get("https://fakestoreapi.com/products").then((items) => items.data),
